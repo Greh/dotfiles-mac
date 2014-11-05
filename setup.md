@@ -22,6 +22,10 @@ There is already a version of python on the machine, but pip does not work, so I
 `brew install python`  
 `pip install virtualenv`  
 
+`mkdir $HOME/go`
+`export GOPATH=$HOME/go`
+`export PATH=$PATH:$GOPATH/bin`
+
 
 Personal preferences
 =============
