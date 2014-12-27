@@ -1,10 +1,11 @@
 export PATH=/usr/local/bin:$PATH
 
- export CLICOLOR=1
+export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
 export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
 
+### Setting go path so installations work
 export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
 
@@ -13,6 +14,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Added manually by me to make fucking postgres fucking work
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
+### current branch in command prompt, copied from http://martinvalasek.com/
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
