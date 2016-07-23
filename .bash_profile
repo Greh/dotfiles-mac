@@ -14,7 +14,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 ### Added manually by me to make fucking postgres fucking work
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 
-### current branch in command prompt, copied from http://martinvalasek.com/
+### current branch in command prompt
 function parse_git_branch () {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
   }
